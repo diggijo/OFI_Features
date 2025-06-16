@@ -23,24 +23,9 @@ Alongside the code, this repository contains a **LaTeX-generated PDF** summarizi
 
 ## Contents
 
-- `ofi_constructor.py` — Python class implementing OFI feature calculations  
-- `example_data.csv` — Sample dataset (replace with your own data)  
-- `ofi_analysis.pdf` — PDF with conceptual questions and explanations  
+- `OFI_Features.ipyb` — Notebook implementing OFI feature calculations 
+- `first_25000_rows.csv` — Sample dataset
+- `OFI Conceptual Questions.pdf` — PDF with conceptual questions and explanations  
 - `README.md` — This file  
 
 ---
-
-## Usage
-
-1. Load your order book data into a pandas DataFrame with appropriate columns (`bid_sz_00`, `ask_sz_00`, ..., `symbol`, `ts_event`, etc.).
-
-2. Instantiate the `OFIConstructor` class with your DataFrame.
-
-3. Call the methods to calculate OFI features:
-
-```python
-ofi = OFIConstructor(df)
-best_level_ofi = ofi.calculate_best_level_ofi()
-multi_level_ofi = ofi.calculate_multi_level_ofi()
-integrated_ofi = ofi.calculate_integrated_ofi()
-cross_asset_ofi = ofi.calculate_cross_asset_ofi()
